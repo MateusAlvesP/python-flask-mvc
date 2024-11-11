@@ -9,6 +9,6 @@ person_routes_bp = Blueprint("person_routes", __name__)
 def registry_person():
     http_request = HttpRequest(body=request.json)
     
-    http_response = PersonRegisterView().handle()
+    http_response = PersonRegisterView().handle(http_request)
 
     return jsonify(http_response.body), http_response.status_code
