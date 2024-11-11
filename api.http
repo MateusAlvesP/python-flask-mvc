@@ -1,2 +1,8 @@
 ###
 POST http://localhost:3000/person/create
+Content-Type: : application/json
+
+{
+    "person_name": "joazinho",
+    "person_age": 21
+}
